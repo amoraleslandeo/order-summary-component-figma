@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --background-body: #E0E8FF;
+    --h1-annual_plan: #1F2E55;
+    --p-price-cancel: #717FA6;
+    --white: #ffffff;
+    --music-selector: #F7F9FF;
+    --btn_payment: #382AE1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat display';
+    font-weight: 500;
+    font-style: normal;
+    color: var(--p-price-cancel);
+    background: var(--background-body) url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+    padding-right: 48px;
+    padding-left: 48px;
+    overflow: hidden;
+}
+
+h1 {
+    color: var(--h1-annual_plan);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 45px;
+    margin-bottom: 0px;
+}
+
+p {
+    text-align: center;
+    line-height: 26px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.music_selector {
+    display: flex;
+    width: 100%;
+    padding: 25px 24px 25px 24px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--music-selector);
+    border-radius: 11px;
+}
+
+.image_text {
+    display: flex;
+    gap: 20px;
+}
+
+.plan_cost {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.plan {
+    color: var(--h1-annual_plan);
+    font-weight: 900;
+}
+
+.btn_change {
+    text-decoration: none;
+    color: var(--btn_payment);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 13px;
+    border-bottom: 1px solid var(--btn_payment);
+}
+
+.btn_change:hover {
+    border-bottom-color: transparent;
+    color: #766CF1;
+
+}
+
+.btn_payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11px;
+    background-color: var(--btn_payment);
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    margin: 32px 0px 32px 0px;
+    padding: 15px 102px 15px 102px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.btn_payment:hover {
+    background-color: #766CF1;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+}
+
+.btn_cancel_order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 129px 48px 129px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: normal;
+    color: var(--p-price-cancel)
+}
+
+.btn_cancel_order:hover {
+    color: var(--h1-annual_plan);
+
+}
