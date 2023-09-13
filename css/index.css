@@ -37,14 +37,6 @@ main {
     align-items: center;
 }
 
-.image {
-    width: 450px;
-    height: 220px;
-    background-image: url('../images/pattern-background-desktop.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
 .container {
     width: 450px;
     display: flex;
